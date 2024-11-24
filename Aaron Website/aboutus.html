@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Analytics Page</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       
+        <link rel="stylesheet" type="text/css" href="main.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    </head>
+</html>
+
+
+<body  data-bs-theme="dark">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.75em" height="2.75em" fill="#f9eeee" viewBox="0 0 16 16">
+                <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848Zm6.75.51a.186.186 0 0 0-.23.034L6.05 7.246a.188.188 0 0 0 .137.316h1.241l-.673 2.195a.19.19 0 0 0 .085.218c.075.043.17.03.23-.034l2.88-3.187a.188.188 0 0 0-.137-.316H8.572l.782-2.195a.19.19 0 0 0-.085-.218Z"/>
+             </svg>
+          <a class="navbar-brand" href="index.html"> &nbsp Electric Vehicles R Us</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="analytics.html">Analytics</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contact</a>
+              </li>-->
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="car_list.html">Car List</a>
+              </li>
+              <!--<li class="nav-item">
+                <a class="nav-link" href="page2.html">Page 2</a>
+              </li>-->
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+ 
+<br><br><br>
+    
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Information About Me</h1>
+            <br><br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <img src="img/Aaron Banach_2.jpg" class="img-fluid rounded " >
+            <br><br>
+            <div class="text-center"><h4>Aaron Banach</h4></div>
+        </div>
+        
+         
+        
+        <div class="col-8">
+          
+
+
+
+        <div>
+            <h3>Professional Information</h3>
+            <p>I currently work for a K-12 education software vendor as a Product Owner. 
+                Therefore, helping to design UI style and layouts is something I am familiar with but I do not have any hands-on experience 
+                actually implementing any of the designs. Typically, I send the development team a list of requirements or a detailed specification document to get enhancements implemented. 
+                 My day-to-day coding skills only involve writing the occasional SQL query so this project has been an interesting little dive into the technologies
+                  that bring websites (and eventually full web applications) to life. 
+            </p>
+            <h3>Project Information</h3>
+            <p>I created this website with a mix of HTML, CSS, Javascript files and a separate folder of external assets for things like images and svg icons.   The home page is defined by the HTML code in an index.html file while each of the other pages also has their specific .html file that closely matches the name on the website (about.html, car_list.html,etc). 
+                Three of the files have corresponding Javascript files to configure special content such as the analytics charts (analytics.js) or handle 
+                form validation and data processing (home.js and car_list.js).  There is a shared CSS file named main.css which is linked to all of the
+                 HTML pages and here I make changes to customize the style of specific content across all pages. For example, in the main.css I set all 
+                 page titles to a royal blue color by customizing the h1 tag or set the source caption for the analytics graphs to a light gray using a 
+                    CSS class ( p.source). </p>
+                <p>This site heavily utilizes the Bootstrap framework for both a professional styling and easy, out-of-the-box, 
+                    interactive functionality.  I include both the CSS and Javascript from Bootstrap via the CDN which is linked to each page in a script 
+                    tag. Each page on the site has a consistent, branded navigation bar at the top and footer at the bottom that comes right from
+                     Bootstrap's example snippets.  For the charts on the Analytics page, I&apos;ve utilized the Chart.js framework and read their documentation 
+                     to add my own data and customize style elements such as line colors, data labels, and axis settings. I pulled data for the charts from
+                      two external sources that I&apos;ve cited right on the page and the home page has links to a third-party site (greencars.com) which provide 
+                      nice explanations of how different types of EVs operate.  The other content on the home page I generated with ChatGPT and pasted it 
+                       into the HTML file. All source files for this site can be accessed from my Github link shown below. 
+                <br><br>
+                Experimenting with the various components in the Bootstrap and Chart.js libraries was one of the more enjoyable parts of this projects
+                 and I&apos;ve learned quite bit. Below is a list of some of the features and components that I&apos;ve implemented within this project website. 
+                <br><br>
+            </p>
+            <h4>Additional Features Implemented:</h4>
+            <ul id="myList">
+                <li>&bull;	&nbsp;&nbsp;Error validation on CRUD form submit page (Car List) to catch null fields using Bootstrap alerts.</li>
+                <li>&bull;	&nbsp;&nbsp;Dropdown form field for CRUD operation including passing text (not value) to the grid display.</li>
+                <li>&bull;	&nbsp;&nbsp;Added logic so form only appears when creating or editing a row; show/hide button and form.</li>
+                <li>&bull;	&nbsp;&nbsp;Implemented a &ldquo;Reset&rdquo; feature to clear form fields and hide the error message if shown.</li>
+                <li>&bull;	&nbsp;&nbsp;Pop-up confirmation dialog box to verify with user before Delete function.</li>
+                <li>&bull;	&nbsp;&nbsp;Bootstrap Nav bar including SVG icon</li>
+                <li>&bull;	&nbsp;&nbsp;Two modal windows on Home screen</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspo&nbsp;&nbsp;	One modal (Sign Up) is a simple form with basic error validation.</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspo&nbsp;&nbsp;	Second modal (See Partners) displays the &ldquo;Name&rdquo; data collected from the Sign Up modal window</li>
+                <li>&bull;	&nbsp;&nbsp;Implemented a &ldquo;Thank You&rdquo; alert within a div tag to inform user data has been saved.</li>
+                <li>&bull;	&nbsp;&nbsp;Two chart widget using Chart.js: one bar chart and one line chart</li>
+               
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspo&nbsp;&nbsp;	Added multiple dataset (series) in the line chart</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspo&nbsp;&nbsp;	Adjusted legend color, adjusted line colors, and axis formatting</li>
+            </ul>
+        </div> 
+<br>
+
+
+
+            <table class="table">
+                <tr>
+                  <th>Description</th>
+                  <th>My Info</th>
+                  <th>Last Updated</th>
+                </tr>
+                <tr>
+                  <td>USF Email</td>
+                  <td>aaronbanach@usf.edu</td>
+                  <td></td>
+                </tr>
+                <tr>
+                    <td>USF U Number</td>
+                    <td>U84548696</td>
+                    <td></td>
+                  </tr>
+                <tr>
+                  <td>GitHub Repo:</td>
+                  <td><a href="https://github.com/usf-abanach/assign2-ev-website">assign2-ev-website</a></td>
+                  <td>11/24/2024 </td>
+                </tr>
+              </table>
+            <br><br>
+            
+           
+        </div>
+    </div>
+    
+   
+
+
+    
+</div>
+
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">&copy;&nbsp;2024 Aaron Enterprises, Inc</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2.50em" height="2.50em" fill="#f9eeee" viewBox="0 0 16 16">
+        <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848Zm6.75.51a.186.186 0 0 0-.23.034L6.05 7.246a.188.188 0 0 0 .137.316h1.241l-.673 2.195a.19.19 0 0 0 .085.218c.075.043.17.03.23-.034l2.88-3.187a.188.188 0 0 0-.137-.316H8.572l.782-2.195a.19.19 0 0 0-.085-.218Z"/>
+        </svg>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="analytics.html" class="nav-link px-2 text-body-secondary">Analytics</a></li>
+        <li class="nav-item"><a href="car_list.html" class="nav-link px-2 text-body-secondary">Car Registery</a></li>
+        
+        <li class="nav-item"><a href="aboutus.html" class="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>
+    </footer>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
